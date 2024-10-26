@@ -1,0 +1,268 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+
+
+body{
+    background: hsl(204, 43%, 93%);
+    font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+}
+main{
+    height: 33rem;
+    width: 50%;    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.138);
+    margin-top: 6%;
+}
+.community-part{
+    height: 50%;
+    width: 100%;
+    padding-left: 2.5em;
+    padding-top: 2em;
+    background: white;
+}
+.subscription-part{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.one{
+    height: 100%;
+    width: 100%;
+}
+
+
+.community-part h1{
+color:  hsl(179, 62%, 43%);
+padding-bottom: .6em;
+}
+.community-part span{
+    display: block;
+    color:  hsl(71, 73%, 54%);
+   
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.community-part p{
+    display: block;
+    color:  gray;
+    padding-top: .4em;
+    font-weight: 500;
+    font-size: 1em;
+    width: 80%;
+    line-height: 2em;
+}
+.monthly{
+    background: hsl(179, 62%, 43%);
+    padding-left: 2em;
+    padding-top: 2em;
+}
+.monthly h2{
+  color: white;
+  padding-bottom: .3em;
+}
+.monthly h3{
+    color: white;
+    font-size: 2em;
+  }
+  .monthly span{
+    font-size: .5em;
+    color: rgba(255, 255, 255, 0.404);
+  }
+  .monthly p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+  .monthly button{
+    height: 3em;
+    width: 84%;
+    color: white;
+    background: hsl(71, 73%, 54%);
+    border: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all .4s;
+    &:hover{
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.341);
+        font-size: 1.1em;
+    }
+  }
+  .why-us{
+    background: hsla(179, 62%, 43%, 0.681);
+    padding-left: 2em;
+    padding-top: 1.7em;
+}
+.why-us h1{
+    color: white;
+    padding-bottom: .4em;
+ 
+
+}
+li
+{height: 1.4em;
+    list-style: none;
+    color: white;
+}
+
+@media (max-width:600px) {
+    main{
+        height: 33rem;
+        width: 70%;   
+        margin-top: 6%;
+    }
+    .community-part{
+        height: 70%;
+        width: 100%;
+        
+    }
+    .subscription-part{
+        height: 100%;
+        width: 100%;
+        
+        flex-direction: column;
+    }
+    .community-part h1{
+        font-size: 1.3em;
+    }
+    .community-part span{
+        font-size: .8em;
+    }
+    .community-part p{
+        font-size: 1em;
+    }
+    .monthly p{
+        font-size: .8em;
+    }
+    
+}
+
+
+@media (min-width:601px) and (max-width:1000px) {
+    
+
+    main{
+        height: 33rem;
+        width: 70%;   
+        margin-top: 6%;
+    }
+    .community-part{
+        height: 50%;
+        width: 100%;
+        
+    }
+    .subscription-part{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .community-part h1{
+        font-size: 1.5em;
+    }
+    .community-part span{
+        font-size: .8em;
+    }
+    .community-part p{
+        font-size: 1em;
+    }
+    .monthly h2{
+font-size: 1.3em;
+    }
+    .one{
+        height: 50%;
+    }
+    .monthly p{
+        font-size: .8em;
+    }
+    
+}
+
+@media (min-width:1001px) and (max-width:1300px) {  
+    main{
+        height: 33rem;
+        width: 50%;   
+        margin-top: 6%;
+    }
+    .community-part{
+        height: 50%;
+        width: 100%;
+        
+    }
+    .subscription-part{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .community-part h1{
+        font-size: 1.5em;
+    }
+    .community-part span{
+        font-size: .8em;
+    }
+    .community-part p{
+        font-size: 1em;
+    }
+    .monthly h2{
+font-size: 1.3em;
+    }
+    .one{
+        height: 50%;
+    }
+    .monthly p{
+        font-size: .8em;
+    }
+    
+}
